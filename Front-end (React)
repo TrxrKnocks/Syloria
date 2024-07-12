@@ -1,0 +1,21 @@
+finance-mentor/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── Dashboard.js
+│   │   ├── Budget.js
+│   │   ├── Expenses.js
+│   │   ├── Goals.js
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   ├── styles/
+│   │   └── ... (CSS or SCSS files)
+│   └── ...
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
