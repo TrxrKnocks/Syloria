@@ -4,7 +4,7 @@ document.getElementById('generateBtn').addEventListener('click', function() {
     document.getElementById('result').innerText = 'Random Number: ' + randomNumber;
 });
 
-// JavaScript code to fetch a random quote from an API
+// JavaScript code to fetch a random quote from https://api.quotable.io and display it
 document.addEventListener('DOMContentLoaded', function() {
     fetchQuote();
 });
@@ -15,7 +15,10 @@ function fetchQuote() {
         .then(data => {
             document.getElementById('quote').innerText = '"' + data.content + '" - ' + data.author;
         })
-        .catch(error => console.log(error));
+        .catch(error => {
+            console.error('Error fetching quote:', error);
+            document.getElementById('quote').innerText = 'Failed to fetch quote. Please try again later.';
+        });
 }
 
 // JavaScript code to change background color randomly
