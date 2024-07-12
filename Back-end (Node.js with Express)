@@ -1,0 +1,18 @@
+finance-mentor-backend/
+├── models/
+│   ├── Budget.js
+│   └── ...
+├── routes/
+│   ├── budget.js
+│   └── ...
+├── config/
+│   └── ... (configuration files like db.js, keys.js)
+├── controllers/
+│   └── ... (controller files if you separate logic from routes)
+├── middleware/
+│   └── ... (middleware files if needed)
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+└── server.js
